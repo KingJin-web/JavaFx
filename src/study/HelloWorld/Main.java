@@ -1,19 +1,18 @@
-package HelloWorld;
+package study.HelloWorld;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root;
         primaryStage.setTitle("Hello World");
         System.out.println("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setWidth(300);
+        primaryStage.setHeight(300);
         primaryStage.show();
     }
 
