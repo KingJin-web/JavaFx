@@ -7,10 +7,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
+ * Application的三种启动方式，和生命周期。
  * @author 12613
  */ //application
 public class mian extends Application {
     public static void main(String[] args) {
+        System.out.println("main");
         launch(args);
     }
     @Override
@@ -22,3 +24,4 @@ public class mian extends Application {
         primaryStage.show();
     }
 }
+
